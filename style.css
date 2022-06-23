@@ -1,0 +1,74 @@
+/* 공통속성 */
+.container_main{display: flex;flex-direction: column;height: inherit; width: 1280px; margin:0 auto; padding: 80px 40px 100px; box-sizing: border-box;}
+.container{width: 1200px; margin:0 auto;}
+#wrap{width: 1903px;}
+/* HERDER */
+#header{height: 80px; display: flex; padding: 0 60px;}
+#header .logo{width: 96px; height: 36.8px;}
+#header .logo_svg{display: block;height: 100%;padding-top: 22px;box-sizing: border-box;}
+#header .logo_svg::before{display: block; width: 96px; height: 36.80262px; background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 3160.13115px 1608.39344px;background-position: -72.39344px -1416.39344px;background-repeat: no-repeat;content: '';}
+#header .nav{padding-left: 36px;}
+#header .nav ul li{float: left; height: 80px; line-height: 80px; text-align: center;letter-spacing: 0.35px;}
+#header .nav ul li a{color: #f2f2f2; font-size: 20px;padding: 0px 15px 0px 13px;font-weight: 400;}
+#header .nav ul li:nth-child(2) a{font-weight: 700; padding: 17px; letter-spacing: 0.55px;}
+#header .login{margin-left: auto;}
+#header .login a{display: block; font-size: 12px; color: #f2f2f2;letter-spacing: -2.1px; text-align: center; padding: 7px 21px 7px 19px; margin-top: 23px; border: 1px solid #fff; border-radius: 30px;}
+#header .login a:hover{background-color: rgba( 255, 255, 255, 0.5 );}
+/* MAIN */
+#main{width: 100%; height: 1442px;}
+#main .tltle_list{height: 50px;padding-top: 40px;}
+#main .tltle_list ul li{float: left; margin-right: 38.5px; padding: 5px 2px 8px 2px; font-weight: 700;}
+#main .tltle_list ul li:nth-child(2){margin-right: 41.5px;}
+#main .tltle_list ul li:nth-child(3){margin-right: 39.5px;}
+#main .tltle_list ul li a{color: #f2f2f2; font-size: 20px;}
+#main .tltle_list ul li:first-child{border-bottom: 4px solid #9352cf;}
+#main .content_list{display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 30px;}
+#main .content_item{position: relative; overflow: hidden; flex: 0 0 auto; width: 594px; padding-top: 340px; margin-top: 42px;background-color: rgba(255,255,255,0.04); box-sizing: border-box;}
+#main .content_item:nth-child(-n+2){margin-top: 0;}
+#main .content_item>img{position: absolute; top: 0; left: 0; width: 594px; height: 334px; object-fit: cover;}
+#main .content_item .text_box::before{position: absolute; top: 50px; left: 0;right: 0; z-index: 1; content: "";}
+#main .content_item .text_box{position: relative;padding: 22px 14px 73px 23px}
+#main .content_item .text_box .tag_box{position: absolute;top: -7px;right: 0;left: 0;z-index: 1;}
+#main .content_item .text_box .tag_box span{color: #fff; background-image: linear-gradient(316deg, #f78a1e -11%, #ed00d2 130%);border-bottom-right-radius: 5px; padding: 3px 13.2px 4px 12px; font-weight: 800; font-size: 11px;}
+#main .content_item .text_box .tit{display: flex;align-items: center; overflow: hidden;}
+#main .content_item .text_box img{width: 36px;}
+#main .content_item .text_box .tit_txt{color: #f2f2f2; font-weight: 500; font-size: 16px; padding: 10px 8px;  box-sizing: border-box; margin-top: -1px;}
+#main .content_item .text_box .desc{display: block; overflow: hidden; line-height: 36px; font-size: 28px; color: #f2f2f2;font-weight: 700;letter-spacing: -.1px;}
+/* FOOTER */
+#footer{width: 100%; height: 220px; border-top: 1px solid #3A3A3C;}
+#footer .info_box{ height: 70px; background-color: rgba(255,255,255,0.05); padding: 16px 0; box-sizing: border-box;}
+#footer .info_box .container{display: flex; justify-content: space-between}
+#footer .info_box .info_sns li{width: 40px;height: 40px; float: left;}
+#footer .info_box .info_sns li:nth-child(1) a{background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 4016px 2044px;background-position: -792px -1724px;background-repeat: no-repeat;margin-left: -1px;}
+#footer .info_box .info_sns li:nth-child(2) a{ background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 4016px 2044px;background-position: -408px -1724px;background-repeat: no-repeat;margin-left: 6px;}
+#footer .info_box .info_sns li:nth-child(3) a{background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 4016px 2044px;background-position: -1032px -1724px;background-repeat: no-repeat;margin-left: 13px;}
+#footer .info_box .info_sns li:nth-child(4) a{background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 4016px 2044px;background-position: -1224px -1724px;background-repeat: no-repeat;margin-left: 22px;}
+#footer .info_box .info_sns li:nth-child(5){margin-top: 9px;margin-left: 30px;}
+#footer .info_box .info_sns li:nth-child(5) a::before{ display: block;margin: 0 auto; width: 25px;height: 20.25px;background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 50.2px 25.55px;background-position: -0.05px -0.05px;background-repeat: no-repeat;content: '';}
+#footer .info_box .info_sns li a{display: block;width: 40px;height: 40px;}
+#footer .info_box .info_app li{float: left;}
+#footer .info_box .info_app li:nth-child(1) a{width: 120px;height: 40px;background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 4016px 2044px;background-position: -471px -1672px;background-repeat: no-repeat;}
+#footer .info_box .info_app li:nth-child(2) a{width: 137px;height: 40px;background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 4016px 2044px;background-position: -328px -1672px;background-repeat: no-repeat;margin-left: 8px;}
+#footer .info_box .info_app li a{display: block;}
+#footer .info_bottom{display: flex; flex-wrap: wrap; padding-top: 24px;}
+#footer .info_bottom .info_util{display: flex; width: 100%;}
+#footer .info_bottom .info_util .language{position: relative;margin-left: auto;}
+#footer .info_bottom .info_util .language span{display: inline-block;vertical-align: top;width: 18px;height: 18px;background-image: url(https://beyondlive.com/img/common-svg-2da9a566596301a33d578a28aff34ea0.svg);background-size: 3012px 1533px;background-position: -428.25px -1224px;background-repeat: no-repeat;}
+#footer .info_bottom .info_util .language .btn{display: inline-block;vertical-align: top;position: relative;min-width: auto;height: auto;padding-left: 3px;padding-right: 20px;border: none;background-color: transparent;font-size: 14px;line-height: 1.29em;font-weight: 500;color: #AFB1B7;}
+#footer .info_bottom .info_util .language .btn::after{width: 5px;height: 5px;border: 1px solid #AFB1B7;border-width: 2px 2px 0 0;transform-origin: center center;content: '';position: absolute;top: 50%;right: 0;transform: translateZ(0) translate(-25%, -40%) rotate(135deg);right: 5px;margin-top: -3px;content: '';;}
+#footer .info_bottom .info_util .util_list{font-size: 0;line-height: normal;}
+#footer .info_bottom .info_util .util_list li{float: left; position: relative; display: inline-block; vertical-align: top;}
+#footer .info_bottom .info_util .util_list li::before{position: absolute;top: 4px;left: 11px;width: 1px;height: 12px;background-color: #3A3A3C;content: '';}
+#footer .info_bottom .info_util .util_list li:first-child::before{}
+#footer .info_bottom .info_util .util_list li:first-child a{padding-left: 0;}
+#footer .info_bottom .info_util .util_list li a{display: block; color: #747479; font-size: 14px; font-weight: 500; padding: 0 14px; letter-spacing: -1.95px; }
+#footer .info_bottom .info_util .util_list li a:hover{color: #fff;}
+#footer .info_bottom .info_if{padding-top: 13px; display: flex; flex-wrap: wrap;}
+#footer .info_bottom .info_if .if_list{flex-basis: 100%;}
+#footer .info_bottom .info_if .if_list li{float: left; position: relative; padding-left: 23px; color: #747479; font-size: 12px; letter-spacing: -0.35px;}
+#footer .info_bottom .info_if .if_list li .txt_under{display: inline-block; text-decoration: underline}
+#footer .info_bottom .info_if .if_list li::after{content: '';display: block;clear: both;}
+#footer .info_bottom .info_if .if_list li::before{position: absolute;top: 4px;left: 11px;width: 1px;height: 12px;background-color: #3A3A3C;content: '';}
+#footer .info_bottom .info_if .if_list li:first-child{padding-left: 0; }
+#footer .info_bottom .info_if .if_list li:nth-child(5){padding-left: 0; clear: left;}
+#footer .info_bottom .copy{display: block; ;color: #747479; padding-top: 13px; font-size: 12px;letter-spacing: -0.35px;}
