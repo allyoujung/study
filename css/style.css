@@ -4,6 +4,8 @@
 .repeat{padding: 24px 0; box-sizing: border-box;}
 .inner{height: inherit; max-width: 1180px; padding: 0 10px; margin:0 auto;}
 .brand_logo path{fill: #1dc078;}
+.fa-solid{font-family: "Font Awesome 6 Free";}
+.icon{font-size: 16px; padding-left: 8px;}
 /* header */
 .header_service{height: 39px; box-sizing: border-box; border-bottom: 1px solid #f1f3f5;}
 .header_service .container{display: flex; align-items: center;}
@@ -25,10 +27,22 @@
 .header_nav .header_nav_menu .nav_menu_right{display: flex; align-items: center;height: 100%;}
 .header_nav .header_nav_menu .nav_menu_right .search_bar{padding-left: 8px; padding-right: 30px;flex-shrink: 1;max-width: 164px;width: auto;}
 .header_nav .header_nav_menu .nav_menu_right .search_bar .input{border-radius: 3px; padding: 5px 9px; width: 122px; height: 24px;background: #f6f6f6; display: inline-block;color: #5f5f5f;border: 1px solid transparent;}
+.header_nav .header_nav_menu .nav_menu_right .search_bar .search_icon{position: relative;}
+.header_nav .header_nav_menu .nav_menu_right .search_bar .search_icon i{display: inline-block;position: absolute; left: -24px; top: 2px; color: rgb(75, 75, 75);}
 .header_nav .header_nav_menu .nav_menu_right .navbar_item .navbar_item{padding: 8px;}
 .header_nav .header_nav_menu .nav_menu_right .navbar_item .button{margin-bottom: unset; border: 1px solid #dbdbdb; border-radius: 4px; margin-left: 2px;}
 .header_nav .header_nav_menu .nav_menu_right .navbar_item .signin{padding:7px 10px;}
 .header_nav .header_nav_menu .nav_menu_right .navbar_item .primary{background-color: #ff7867; border-color: transparent; color: #fff; padding: 7px 7px;}
+.after .header_nav_menu .nav_menu_right .search_bar{padding-right: 18px;}
+.after .header_nav .header_nav_menu .nav_menu_right .search_bar .input{}
+.after .header_nav .header_nav_menu .nav_menu_right .search_bar .search_icon{}
+.after .header_nav .header_nav_menu .nav_menu_right .search_bar .search_icon i{}
+.after .header_nav .header_nav_menu .nav_menu_right .navbar_item{}
+.after a.button_item{background-color: #00c471; color: #fff; padding: 6px; border-radius: 4px;}
+.after .navbar_item .icon_cover{width: 24px; height: 24px; padding-left: 17px;}
+.after .header_nav .header_nav_menu .nav_menu_right .navbar_item .button{}
+.after .header_nav .header_nav_menu .nav_menu_right .navbar_item .signin{}
+.after .header_nav .header_nav_menu .nav_menu_right .navbar_item .primary{}
 /* main */
 /* main - banner*/
 .banner .main_visual01{height: 320px;background-color: #ff7836;}
@@ -47,11 +61,14 @@
 .pagination{height: 63px; border-bottom: 1px solid #f1f3f5;}
 .pagination .container{position: relative;display: grid;padding-top: 13.5px;grid-template-columns: 135px 33px 1fr 52px;height: 100%;max-height: 100%;cursor: default;}
 .pagination .pagination_controller{display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 0 16px;height: 36px;font-size: 14px;color: #fff;border-radius: 20px;background-color: rgba(0,0,0,.5);}
+.pagination .control_wrapper{display: flex; align-items: center; justify-content: space-between; width: 50px;}
+.pagination .control_wrapper .icon{padding-left: 0; font-size: 12px;}
 .pagination .divider{margin: 0 16px; width: 1px; height: 36px; background-color: #dee2e6;}
 .pagination .pagination_wrapper{position: relative; overflow: hidden; height: 36px;}
 .pagination .pagination_wrapper .pagination_bullets{position: absolute; left: 0;top: 0;display: flex; z-index: 71; }
-.pagination .pagination_wrapper .pagination_bullets .bullet_list{flex: 0 0 auto;padding: 0 16px;height: 36px;line-height: 36px;text-align: center;font-size: 14px;font-weight: 700;color: #495057;border-radius: 20px;box-shadow: inset 0 0 0 1px #ced4da;background-color: #fff;cursor: pointer;margin-left: 8px;}
 .pagination .pagination_wrapper .pagination_bullets .bullet_list:first-child{margin-left: 32px;}    
+.pagination .pagination_wrapper .pagination_bullets .bullet_list{flex: 0 0 auto;padding: 0 16px;height: 36px;line-height: 36px;text-align: center;font-size: 14px;font-weight: 700;color: #495057;border-radius: 20px;box-shadow: inset 0 0 0 1px #ced4da;background-color: #fff;cursor: pointer;margin-left: 8px;}
+.pagination .pagination_wrapper .pagination_bullets .bullet_active{color: #00c471; box-shadow: inset 0 0 0 2px #00c471;}
 .pagination .pages_button{margin-left: 16px; width: 36px; height: 36px; font-size: 16px; color: #495057; border-radius: 36px; border: 1px solid #ced4da; box-shadow: 0 2px 4px 0rgba(0,0,0,.08); background-color: #fff; cursor: pointer;}
 .after .pagination .pagination_wrapper .pagination_bullets{position: absolute; left: -69px;top: 0;}
 /* main - search*/
@@ -60,6 +77,8 @@
 .search .search_content .title{font-weight: 400;margin-bottom: 17px; font-size: 24px;}
 .search .search_content .search_wrapper{max-width: 580px; width: 100%; display: inline-block; position: relative;}
 .search .search_content .search_wrapper .input{background-color: rgba(29,192,120,.12); border: 1px solid rgba(29,192,120,.24); box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%); font-size: 16px; padding: 14px 20px; border-radius: 28px; box-sizing: border-box; height: auto; width: 100%;height: 54px;}
+.search .search_content .search_wrapper .button{position: absolute; right: 30px; top: 50%; transform: translateY(-50%); background-color: inherit;}
+.search .search_content .search_wrapper .button i{font-size: 20px; font-weight: 600;}
 .after .search .search_content .title{margin-bottom: 18px;}
 /* main - tag_section*/
 .tag_section{height: 72px; padding-bottom: 24px; margin-top: -18px;}
@@ -68,7 +87,7 @@
 /* main - main_header(공통) */
 .main_header{display: flex;justify-content: space-between; align-items: flex-end; margin-bottom: 16px;}
 .main_header .main_content_header{height: 64px;}
-.main_header .main_content_header .title{color: #1e1e1e; line-height: 1.5; font-weight: 600; font-size: 24px;}
+.main_header .main_content_header .title{color: #1e1e1e; line-height: 1.5; font-weight: 600; font-size: 24px; display: flex;    align-items: center;}
 .after .main_header .main_content_header .title .has_text_link{color: #1dc078; font-weight: 700;}
 .main_header .main_content_header .subtext{margin-top: 7px; font-weight: 400; color: #757575; font-size: 15px;}
 /* main - 나의 최근 학습 강의 */
@@ -80,14 +99,14 @@
 .lecture_content .lecture_wrapper .lecture_card .card_image .image{position: relative;overflow: hidden;display: flex;align-items: center;justify-content: center;max-width: 174px;width: 100%;height: 100%;overflow: hidden}
 .lecture_content .lecture_wrapper .lecture_card .card_image .image .image_lazyload{width: 100%;height: 100%;object-fit: cover;}
 .lecture_content .lecture_wrapper .card_content{display: flex;flex-direction: column;flex: 1 1 auto;padding: 13px;}
-.lecture_content .lecture_wrapper .card_content .card_top .text{color: #333;font-weight: 700;margin-bottom: 4px;overflow: hidden;text-overflow: ellipsis;font-size: 16px;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-wrap: break-word;max-height: 3rem;}
+.lecture_content .lecture_wrapper .card_content .card_top .text{color: #333;font-weight: 700;margin-bottom: 4px;overflow: hidden;text-overflow: ellipsis;font-size: 16px;}
 .lecture_content .lecture_wrapper .card_content .card_bottom{display: flex; align-items: flex-end; margin-top: auto; }
 .lecture_content .lecture_wrapper .card_content .card_bottom .card_progress_cover{flex: 1 1 auto; color: #595959;padding-right: 12px;}
 .lecture_content .lecture_wrapper .card_content .card_bottom .card_progress_cover .text{margin-bottom: -7px; font-size: 14px;}
 .lecture_content .lecture_wrapper .card_content .card_bottom .card_progress_cover .desc_progress::before{display: inline-block; content: "|"; color: #dedede; margin: 0 8px; font-size: 16px;}
 .lecture_content .lecture_wrapper .card_content .card_bottom .progressbar .progress{height: 2px;background-color: #1dc078;}
 .lecture_content .lecture_wrapper .card_content .card_bottom .card_button_cover{flex-shrink: 0; text-align: right;}
-.lecture_content .lecture_wrapper .card_content .card_bottom .card_button_cover .button{font-size: 14px; background-color: #1dc078; color: #fff; z-index: 2;text-align: center;border-radius: 4px; white-space: nowrap; padding: 8px;box-shadow: none;display: inline-flex; border: none; height: auto; line-height: 1; font-weight: 700;}
+.lecture_content .lecture_wrapper .card_content .card_bottom .card_button_cover .button{font-size: 14px; background-color: #1dc078; color: #fff; z-index: 2;text-align: center;border-radius: 4px; white-space: nowrap; padding: 9px 9px 6px 9px;box-shadow: none;display: inline-flex; border: none; height: auto; line-height: 1; font-weight: 700;}
 /* main - 무료 강의 리스트 */
 .free_list_flex{display: flex;justify-content: space-between;align-items: flex-end;}
 .free_content{padding: 6px 0; height: 328.11px;}
@@ -103,13 +122,13 @@
 .free_content .card_content .rating{height: 24px;}
 .free_content .card_content .rating .review_cnt{font-size: 10px;position: absolute;left: 72px;bottom: 10px; color: #4a4a4a;}
 .free_content .card_content .price{height: 21px;;font-weight: 700; font-size: 16px;color: #175cbe;}
+.free_content .card_content .pay_price{margin-left: -2px;}
+.free_content .card_content del{color: #595959;font-weight: 500;font-size: 14.4px; opacity: .75;}
 .free_content .card_content .tags{padding-top: 8px;align-items: center;display: flex;flex-wrap: wrap;justify-content: flex-start;}
 .free_content .card_content .tags .tag{margin-bottom: 8px; margin-right: 8px;align-items: center; background-color: hsl(321,63%,90%);border-radius: 4px;color: #454545;display: inline-flex;font-size: 12px;height: 24px;justify-content: center;line-height: 1.5;padding-left: 9px;padding-right: 9px;white-space: nowrap;}
 .free_content .card_content .tags .new{background-color: hsl(182,75%,94%);}
 .free_content .card_content .tags .sale{background-color: hsl(1,100%,89%);}
 .after .free_content .card_content .tags{padding-top: 10px;}
-/* main - 나와 비슷한 사람들이 수강한 강의 */
-
 /* main - 왕초보 강의 리스트 */
 .welcome{padding: 12px 0;}
 /* main - 빈칸 */
@@ -121,6 +140,7 @@
 .after .roadmap .main_header{padding-top: 12px;}
 .roadmap .main_header .main_content_header{height: 64px;}
 .roadmap .main_header .main_content_header .title{color: #1e1e1e; line-height: 1.5; font-weight: 600; font-size: 24px;}
+.roadmap .main_header .main_content_header .title .courses_tag{color: #fa4c3d;font-size: 12px;font-weight: 700;padding: 11px 1px 3px 4px}
 .roadmap .main_header .main_content_header .subtext{margin-top: 7px; font-weight: 400; color: #757575; font-size: 15px;}
 .roadmap .free_list_flex{display: flex;justify-content: space-between;align-items: flex-end;}
 .roadmap .free_content{padding: 6px 0; height: 259.7px;}
@@ -133,7 +153,7 @@
 .curation{padding: 12px 0;}
 .after .curation{padding: 24px 0;}
 .curation .curation_header .curation_content_header{height: 36px; padding-bottom: 12px;}
-.curation .curation_header .curation_content_header .title{color: #1e1e1e; line-height: 1.5; font-weight: 600; font-size: 24px;}
+.curation .curation_header .curation_content_header .title{color: #1e1e1e; line-height: 1.5; font-weight: 600; font-size: 24px; display: flex; align-items: center;}
 .curation .free_content{padding: 6px 0; height: 303.7px;}
 .curation .free_content .free_content_list{position: relative; width: 100%; height: 100%; z-index: 1;display: flex;transition-property: transform;box-sizing: content-box;}
 .curation .free_content .free_content_list .card_image img{width: 379.19px;height: 196.5px;}
@@ -147,7 +167,7 @@
 .recent_courses .main_header{display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px;}
 .recent_courses .main_header .main_content_header{height: 36px;}
 .recent_courses .main_header .main_content_header .title{color: #1e1e1e; line-height: 1.5; font-weight: 600; font-size: 24px;}
-.recent_courses .main_header .main_content_header .title{color: #1e1e1e; line-height: 1.5; font-weight: 600; font-size: 24px;}
+.recent_courses .main_header .main_content_header .title .courses_tag{color: #fa4c3d;font-size: 12px;font-weight: 700;padding: 11px 1px 3px 4px}
 .recent_courses .main_header .main_content_header .subtext{margin-top: 7px; font-weight: 400; color: #757575; font-size: 15px;}
 .recent_courses .free_content{padding: 6px 0; height: 293.11px;}
 /* main - 리뷰 */
@@ -157,7 +177,8 @@
 .review_content .review_content_left .count_user{color: #47c880;}
 .review_content .review_content_left .review_text p{color: #757575;margin-bottom: 36px; font-size: 16px; font-weight: 400;line-height: 1.5;}
 .review_content .review_content_left .review_buttons{align-items: center;display: flex;flex-wrap: wrap;justify-content: flex-start;}
-.review_content .review_content_left .review_buttons .button{font-size: 16px;color: #333;border-radius: 3px;border: 1px solid #1dc078;background-color: #fff;height: auto;line-height: 1;margin-right: 8px;padding: 10px 35px 10px 16px;}
+.review_content .review_content_left .review_buttons .button{font-size: 16px;color: #333;border-radius: 3px;border: 1px solid #1dc078;background-color: #fff;height: auto;line-height: 1;margin-right: 8px;padding: 10px 22px 10px 16px;}
+.review_content .review_content_left .review_buttons .icon{padding-left: 3px; font-size: 14px;}
 .review_content .review_content_right{max-width: 590px;width: 100%;}
 .review_content .review_right_inner{height: 480px; position: relative;margin-left: auto;margin-right: auto;position: relative;overflow: hidden;list-style: none;padding: 0;z-index: 1;}
 .review_content .review_right_box{background-color: #f9f9f9;width: auto; height: auto;margin: 5px;margin-bottom: 25px; padding: 16px; border-radius: 4px; color: #333;    box-shadow: 0 2px 3px rgb(0 10 18 / 10%), 0 0 0 1px rgb(0 10 18 / 10%);}
@@ -167,6 +188,7 @@
 .review_content .review_right_box .box_top .date{color: #979797; font-size: 14px;}
 .review_content .review_right_box .box_bottom .title{height: 27px;display: flex; align-items: center; color: #333; margin-bottom: 4px; font-weight: 600;}
 .review_content .review_right_box .box_bottom .text{font-size: 18px;}
+.review_content .review_right_box .box_bottom .icon{padding-left: 2px; font-size: 14px;}
 .review_content .review_right_box .box_bottom .text2{color: #333; font-size: 16px; height: 24px;}
 /* main - 하단배너 */
 .banner2{height: 230px;}
@@ -201,7 +223,7 @@
 .apply .apply_bottom .apply_wrapper .apply_box{width: 380px; height: 332px; display: inline-flex;background-color: #fff; flex-direction: column; align-items: flex-start; padding: 48px; color: #333; box-sizing: border-box; margin: 2px; flex: 0 0 auto; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%); border-radius: 4px;}
 .apply .apply_bottom .apply_wrapper .subtitle{ padding-top: 2px;  margin-bottom: 8px; font-size: 18px; font-weight: 600;}
 .apply .apply_bottom .apply_wrapper .text{font-size: 16px;width: 100%;line-height: 1.5;font-weight: 400; color: #757575;}
-.apply .apply_bottom .apply_wrapper .button{font-weight: 700; line-height: 1; background-color: #1dc078; color: #fff; margin-top: auto; align-items: center; border: unset; border-radius: 290486px; padding: 13px 35px 11px 16px}
+.apply .apply_bottom .apply_wrapper .button{font-weight: 700; line-height: 1; background-color: #1dc078; color: #fff; margin-top: auto; align-items: center; border: unset; border-radius: 290486px; padding: 10px 18px 11px 16px}
 /* footer */
 .footer{background-color: #303741;}
 .footer .wrapper{display: flex; max-width: 1152px; margin: 0 auto; flex-direction: column;}
