@@ -33,16 +33,8 @@
 .header_nav .header_nav_menu .nav_menu_right .navbar_item .button{margin-bottom: unset; border: 1px solid #dbdbdb; border-radius: 4px; margin-left: 2px;}
 .header_nav .header_nav_menu .nav_menu_right .navbar_item .signin{padding:7px 10px;}
 .header_nav .header_nav_menu .nav_menu_right .navbar_item .primary{background-color: #ff7867; border-color: transparent; color: #fff; padding: 7px 7px;}
-.after .header_nav_menu .nav_menu_right .search_bar{padding-right: 18px;}
-.after .header_nav .header_nav_menu .nav_menu_right .search_bar .input{}
-.after .header_nav .header_nav_menu .nav_menu_right .search_bar .search_icon{}
-.after .header_nav .header_nav_menu .nav_menu_right .search_bar .search_icon i{}
-.after .header_nav .header_nav_menu .nav_menu_right .navbar_item{}
 .after a.button_item{background-color: #00c471; color: #fff; padding: 6px; border-radius: 4px;}
 .after .navbar_item .icon_cover{width: 24px; height: 24px; padding-left: 17px;}
-.after .header_nav .header_nav_menu .nav_menu_right .navbar_item .button{}
-.after .header_nav .header_nav_menu .nav_menu_right .navbar_item .signin{}
-.after .header_nav .header_nav_menu .nav_menu_right .navbar_item .primary{}
 /* main */
 /* main - banner*/
 .banner .main_visual01{height: 320px;background-color: #ff7836;}
