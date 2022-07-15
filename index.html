@@ -7,13 +7,11 @@
     <title>2주차</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.inflearn.com/dist/fontawesome/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/24ba2cef07.js" crossorigin="anonymous"></script>
-    <style>
-    /* popup */
-    </style>
+    <script src="https://kit.fontawesome.com/6607f7b7c3.js" crossorigin="anonymous"></script>
 </head>
 <div id="skip">
     <a href="#header">헤더바로가기</a>
@@ -67,17 +65,45 @@
                             <li><a href="#">채용정보</a></li>
                             </ul>
                             </div>
+                            <div class="before" style="display:none;">
                             <div class="nav_menu_right">
                             <div class="search_bar">
                             <input type="text" class="input">
                             <span class="search_icon">
-                            <i class="far fa-search"></i>
+                            <i class="fa-light fa-magnifying-glass fas"></i>
                             </span>
                             </div>
-                            <div class="navbar_item buttons before" style="display:block;">
+                            <div class="navbar_item buttons">
                             <a href="#" class="navbar_item">지식공유참여</a>
                             <a role="button" class="button signin">로그인</a>
                             <a class="button primary">회원가입</a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="after" style="display:block;">
+                            <div class="nav_menu_right" >
+                            <div class="search_bar" style="padding-right: 5px;">
+                            <input type="text" class="input">
+                            <span class="search_icon">
+                            <i class="fa-light fa-magnifying-glass fas"></i>
+                            </span>
+                            </div>
+                            <div class="navbar_item buttons">
+                            <a href="#" class="navbar_item" style="padding: 17px;">지식공유참여</a>
+                            <a role="button" class="button_item" href="#">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span>최근강의</span>
+                            </a>
+                            <a href="#" class="icon_cover gnb_cart">
+                            <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                            </a>
+                            <a href="#" class="icon_cover">
+                            <span class="icon"><i class="fa-regular fa-bell"></i></span>
+                            </a>
+                            <a href="#" class="icon_cover">
+                            <span class="icon"><i class="fa-regular fa-user"></i></span>
+                            </a>
+                            </div>
                             </div>
                             </div>
                         </div>
@@ -85,7 +111,7 @@
                 </div>
             </nav>
         </header>
-        <main id="main oneView" class="main before" style="display:block;">
+        <main id="main oneView" class="main before" style="display:none;">
             <section class="banner">
                 <div class="main_visual01">
                 <div class="container">
@@ -106,6 +132,17 @@
                         <div class="pagination_controller_wrapper">
                         <span class="current_index">8</span>/<span class="total_count">10</span>
                         </div>
+                        <div class="control_wrapper">
+                        <span class="icon">
+                        <i class="fa-solid fa-angle-left"></i>
+                        </span> 
+                        <span class="icon">
+                        <i class="fa-solid fa-grip-lines-vertical"></i>
+                        </span>
+                        <span class="icon">
+                        <i class="fa-solid fa-angle-right"></i>
+                        </span>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div class="pagination_wrapper">
@@ -115,12 +152,14 @@
                             <span class="bullet_list">입문 로드맵</span>
                             <span class="bullet_list">지식공유신청</span>
                             <span class="bullet_list">나에게 맞는 강의</span>
-                            <span class="bullet_list">신규 강의 🎁</span>
+                            <span class="bullet_list bullet_active">신규 강의 🎁</span>
                             <span class="bullet_list">인프런은 🌱</span>
                             <span class="bullet_list">인프런 동료찾기</span>
                         </div>
                     </div>
-                    <button type="button" class="pages_button"></button>
+                    <button type="button" class="pages_button">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
                 </div>
             </section>
             <section class="search">
@@ -130,7 +169,9 @@
                         <div class="search_wrapper">
                         <input class="input" type="text" placeholder="배우고 싶은 지식을 입력해보세요.">
                         <button class="button">
-                            <span class="icon"><i class="far fa-search"></i></span>
+                        <span class="icon">
+                        <i class="fa-light fa-magnifying-glass fas"></i>
+                        </span>
                         </button>
                         </div>
                     </div>
@@ -160,7 +201,9 @@
                     <div class="main_header">
                         <div class="main_content_header">
                         <a href="#">
-                        <h1 class="title">무료강의? 오히려 좋아 ✨</h1>
+                        <h1 class="title">무료강의? 오히려 좋아 ✨
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                        </h1>
                         </a>
                         <p class="subtext">무료 강의부터 가볍게 시작해 보세요.</p>
                         </div>
@@ -302,7 +345,7 @@
                         <div class="main_content_header">
                         <a href="#">
                         <h1 class="title">왕초보도 할 수 있어요 💪
-                        <span class="icon"><i class="fal"></i></span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         <p class="subtext">이미 검증된 쉽고 친절한 입문 강의!!</p>
@@ -448,7 +491,8 @@
                         <div class="main_content_header">
                         <a href="#">
                         <h1 class="title">기본부터 실무까지 제시해주는 로드맵 🏃🏻‍♀️
-                        <span class="icon"><i class="fal"></i></span>
+                            <span class="courses_tag">RoadMap!!</span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         <p class="subtext">아무것도 몰라도 따라오다 보면 전문가가 될 수 있어요!</p>
@@ -521,7 +565,7 @@
                         <div class="curation_content_header">
                         <a href="#">
                         <h1 class="title">읽어보기
-                        <span class="icon"><i class="fal"></i></span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         </div>
@@ -582,7 +626,8 @@
                         <div class="main_content_header">
                         <a href="#">
                         <h1 class="title">따끈따끈, 신규 강의를 만나보세요! 🙋🏻‍♀️
-                        <span class="icon"><i class="fal"></i></span>
+                            <span class="courses_tag">NEW!!</span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         </div>
@@ -598,7 +643,10 @@
                             <div class="card_content">
                             <div class="course_title">개발자면접을 위한 CS전공지식 I CS면접 디자인패턴 네트워크 운영체어쩌고 저쩌고</div>
                             <div class="instructor">큰돌</div>
-                            <div class="price">₩74,800</div>
+                            <div class="price">
+                            <del>₩165,000</del>
+                            <span class="pay_price">₩115,500</span>
+                            </div>
                             <div class="tags">
                             <span class="tag">+1000명</span>
                             <span class="tag new">새강의</span>
@@ -619,7 +667,10 @@
                             <div class="card_content">
                             <div class="course_title">ARM Cortex-M 프로세서 프로그래밍</div>
                             <div class="instructor">홍영기</div>
-                            <div class="price">₩55,000</div>
+                            <div class="price">
+                            <del>₩99,000</del>
+                            <span class="pay_price">₩69,300</span>
+                            </div>
                             <div class="tags">
                             <span class="tag new">새강의</span>
                             <span class="tag sale">할인중</span>
@@ -639,7 +690,10 @@
                             <div class="card_content">
                             <div class="course_title">호돌맨의 요절복통 개발쇼</div>
                             <div class="instructor">호돌맨</div>
-                            <div class="price">₩44,000</div>
+                            <div class="price">
+                            <del>₩86,900</del>
+                            <span class="pay_price">₩60,830</span>
+                            </div>
                             <div class="tags">
                             <span class="tag new">새강의</span>
                             <span class="tag sale">할인중</span>
@@ -659,7 +713,10 @@
                                 <div class="card_content">
                                 <div class="course_title">프리미어프로 기초 때려잡기<br>PERFECT 강좌</div>
                                 <div class="instructor">EDUPIC 미디어 강좌.</div>
-                                <div class="price">₩143,000</div>
+                                <div class="price">
+                                <del>₩198,000</del>
+                                <span class="pay_price">₩138,600</span>
+                                </div>
                                 <div class="tags">
                                 <span class="tag new">새강의</span>
                                 <span class="tag sale">할인중</span>
@@ -679,7 +736,10 @@
                                 <div class="card_content">
                                 <div class="course_title">블록체인, 가상자산거래소 보안</div>
                                 <div class="instructor">ISMS-P WIN</div>
-                                <div class="price">₩44,000</div>
+                                <div class="price">
+                                <del>₩110,000</del>
+                                <span class="pay_price">₩99,000</span>
+                                </div>
                                 <div class="tags">
                                 <span class="tag new">새강의</span>
                                 <span class="tag sale">할인중</span>
@@ -706,11 +766,11 @@
                             <div class="review_buttons">
                             <a class="button" href="#">
                             <span>수강평 더보기</span>
-                            <span class="icon"><i class="fal fa-angle-right"></i></span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                             </a>
                             <a class="button" href="#">
                             <span>기능/강좌 요청하기</span> 
-                            <span class="icon"><i class="fal fa-angle-right"></i></span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                             </a>
                             </div>
                         </div>
@@ -723,7 +783,9 @@
                                 </div>
                                 <div class="box_bottom">
                                 <a href="#" class="title">
-                                <span class="text">핵심만 쉽게, 모두의 SQL 비법 레시피</span><span class="icon"><i class="fal fa-angle-right"></i></span></a>
+                                <span class="text">핵심만 쉽게, 모두의 SQL 비법 레시피</span>
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
                                 <div class="text2">SQL을 쉽게 요리하는 방법을 알려주세요, 좋은 강의 감사합니다!</div>
                                 </div>
                                 </div>
@@ -734,7 +796,9 @@
                                 </div>
                                 <div class="box_bottom">
                                 <a href="#" class="title">
-                                <span class="text">파이썬 알고리즘 문제풀이 (코딩테스트 대비)</span><span class="icon"><i class="fal fa-angle-right"></i></span></a>
+                                <span class="text">파이썬 알고리즘 문제풀이 (코딩테스트 대비)</span>
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
                                 <div class="text2">기본기를 닦을 수 있어서 좋습니다.</div>
                                 </div>
                                 </div>
@@ -745,7 +809,9 @@
                                 </div>
                                 <div class="box_bottom">
                                 <a href="#" class="title">
-                                <span class="text">초보자를 위한 AWS 클라우드 시작하기</span><span class="icon"><i class="fal fa-angle-right"></i></span></a>
+                                <span class="text">초보자를 위한 AWS 클라우드 시작하기</span>
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
                                 <div class="text2">잘 봤습니다.</div>
                                 </div>
                                 </div>
@@ -756,7 +822,9 @@
                                 </div>
                                 <div class="box_bottom">
                                 <a href="#" class="title">
-                                <span class="text">스프링 MVC 1편  - 백엔드 웹 개발 핵심 기술</span><span class="icon"><i class="fal fa-angle-right"></i></span></a>
+                                <span class="text">스프링 MVC 1편  - 백엔드 웹 개발 핵심 기술</span>
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
                                 <div class="text2">정말 잘 들었습니다 올해 이직했는데 도움이 </div>
                                 </div>
                                 </div>
@@ -808,7 +876,9 @@
                             <p>9개월간 온라인 기술 강의로만 1억원!<br>나의 지식을 나눠 사람들에게 배움의 기회를 주고, 의미있는 대가를 가져가세요.</p>
                             </div>
                             <a class="button" href="#">
-                            <span>지식공유자 참여하기</span>
+                            <span>지식공유자 참여하기
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                             </a>
                             </div>
                             <div class="apply_box">
@@ -817,7 +887,9 @@
                             <p>모든 팀원의 인프런의 강의들을 자유롭게 학습하는 환경을 제공해주세요.<br>업무 스킬에 집중된 콘텐츠를 통해 최신 트렌드의 업무역량을 습득할 수 있습니다.</p>
                             </div>
                             <a class="button" href="#">
-                            <span>비즈니스 신청하기</span>
+                            <span>비즈니스 신청하기
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                             </a>
                             </div>
                             <div class="apply_box">
@@ -826,7 +898,9 @@
                             <p>학교와 인프런이 함께 하여,<br>많은 학생 분들께 정해진 커리큘럼 이외에도 필요한 학습을 보완하고, 더욱 성장할 수 있도록 도와드립니다.</p>
                             </div>
                             <a class="button" href="#">
-                            <span>대학생 신청하기</span>
+                            <span>대학생 신청하기
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                             </a>
                             </div>
                         </div>
@@ -835,7 +909,7 @@
             </section>
             </section>
         </main>
-        <main id="main" class="main after" style="display:none">
+        <main id="main" class="main after" style="display:block">
             <section class="banner">
                 <div class="main_visual01">
                 <div class="container">
@@ -856,6 +930,17 @@
                         <div class="pagination_controller_wrapper">
                         <span class="current_index">8</span>/<span class="total_count">12</span>
                         </div>
+                        <div class="control_wrapper">
+                        <span class="icon">
+                        <i class="fa-solid fa-angle-left"></i>
+                        </span> 
+                        <span class="icon">
+                        <i class="fa-solid fa-grip-lines-vertical"></i>
+                        </span>
+                        <span class="icon">
+                        <i class="fa-solid fa-angle-right"></i>
+                        </span>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div class="pagination_wrapper">
@@ -864,14 +949,16 @@
                             <span class="bullet_list">데이터 분석</span>
                             <span class="bullet_list">호돌맨 스프링</span>
                             <span class="bullet_list">지식공유신청</span>
-                            <span class="bullet_list">인프런 스낵 #2</span>
+                            <span class="bullet_list bullet_active">인프런 스낵 #2</span>
                             <span class="bullet_list">나에게 맞는 강의</span>
                             <span class="bullet_list">신규 강의 🎁</span>
                             <span class="bullet_list">인프런 동료찾기</span>
                             <span class="bullet_list">인프런은 🌱</span>
                         </div>
                     </div>
-                    <button type="button" class="pages_button"></button>
+                    <button type="button" class="pages_button">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
                 </div>
             </section>
             <section class="search">
@@ -911,14 +998,15 @@
                     <div class="main_header">
                         <div class="main_content_header" style="height: 37px;">
                         <a href="#">
-                        <h1 class="title">나의 최근 학습 강의</h1>
+                        <h1 class="title">나의 최근 학습 강의
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                        </h1>
                         </a>
                         </div>
                     </div>
                     <div class="lecture_content"> 
                         <div class="lecture_wrapper">
                             <div class="lecture_card">
-                                <a href="#"></a>
                                 <div class="card_image">
                                 <figure class="image">
                                 <img class="image_lazyload" loading="lazy" src="https://cdn.inflearn.com/public/courses/328340/cover/13465c65-a83b-4bc1-82b3-71832345759d/328340-eng.png" alt="328340-eng.png">
@@ -948,7 +1036,6 @@
                                 </div>
                             </div>
                             <div class="lecture_card">
-                                <a href="#"></a>
                                 <div class="card_image">
                                 <figure class="image">
                                 <img class="image_lazyload" loading="lazy" src="https://cdn.inflearn.com/public/courses/328340/cover/13465c65-a83b-4bc1-82b3-71832345759d/328340-eng.png" alt="328340-eng.png">
@@ -956,16 +1043,16 @@
                                 </div>
                                 <div class="card_content">
                                 <div class="card_top">
-                                <h1 class="text">Javascript ES6+ 제대로 알아보기 - 초급</h1>
+                                <h1 class="text">입문자를 위한 자바스크립트 기초 강의</h1>
                                 </div>
                                 <div class="card_bottom">
                                 <span class="card_progress_cover">
                                 <div class="text">
                                 <span class="desc_term">기한: 무제한</span>
-                                <span class="desc_progress">진도율: 44.83%</span>
+                                <span class="desc_progress">진도율: 25.53%</span>
                                 </div>
                                 <div class="progressbar">
-                                <progress class="progress" value="44.83" max="100"></progress>
+                                <progress class="progress" value="25.53" max="100"></progress>
                                 </div>
                                 </span>
                                 <span class="card_button_cover">
@@ -1126,8 +1213,8 @@
                     <div class="main_header">
                         <div class="main_content_header">
                         <a href="#">
-                        <h1 class="title">내가 학습한 <span class="has_text_link"> JavaScript </span> 분야 인기 강의
-                        <span class="icon"><i class="fal"></i></span>
+                        <h1 class="title">내가 학습한&nbsp<span class="has_text_link">JavaScript</span>&nbsp분야 인기 강의
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         <p class="subtext">다양한 프로그래밍 언어 랭킹 조사에서 언제나 상위권을 차지하는 자바스크립트! 프론트엔드에서 백엔드까지 다양한 영역에서 사용할 수 있어요.</p>
@@ -1270,8 +1357,8 @@
                     <div class="main_header">
                         <div class="main_content_header">
                         <a href="#">
-                        <h1 class="title">내가 학습한 <span class="has_text_link"> ES6 </span> 분야 인기 강의
-                        <span class="icon"><i class="fal"></i></span>
+                        <h1 class="title">내가 학습한&nbsp<span class="has_text_link">ES6</span>&nbsp분야 인기 강의
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         <p class="subtext">ES6의 개념과 새로운 기능을 배워 더욱 읽기 편한 코드를 작성해보세요.</p>
@@ -1467,7 +1554,8 @@
                         <div class="main_content_header">
                         <a href="#">
                         <h1 class="title">따끈따끈, 신규 강의를 만나보세요! 🙋🏻‍♀️
-                        <span class="icon"><i class="fal"></i></span>
+                            <span class="courses_tag">NEW!!</span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         </div>
@@ -1483,7 +1571,10 @@
                             <div class="card_content">
                             <div class="course_title">개발자면접을 위한 CS전공지식 I CS면접 디자인패턴 네트워크 운영체어쩌고 저쩌고</div>
                             <div class="instructor">큰돌</div>
-                            <div class="price">₩74,800</div>
+                            <div class="price">
+                            <del>₩165,000</del>
+                            <span class="pay_price">₩115,500</span>
+                            </div>
                             <div class="tags">
                             <span class="tag">+1000명</span>
                             <span class="tag new">새강의</span>
@@ -1504,7 +1595,10 @@
                             <div class="card_content">
                             <div class="course_title">ARM Cortex-M 프로세서 프로그래밍</div>
                             <div class="instructor">홍영기</div>
-                            <div class="price">₩55,000</div>
+                            <div class="price">
+                            <del>₩99,000</del>
+                            <span class="pay_price">₩69,300</span>
+                            </div>
                             <div class="tags">
                             <span class="tag new">새강의</span>
                             <span class="tag sale">할인중</span>
@@ -1524,7 +1618,10 @@
                             <div class="card_content">
                             <div class="course_title">호돌맨의 요절복통 개발쇼</div>
                             <div class="instructor">호돌맨</div>
-                            <div class="price">₩44,000</div>
+                            <div class="price">
+                            <del>₩86,900</del>
+                            <span class="pay_price">₩60,830</span>
+                            </div>
                             <div class="tags">
                             <span class="tag new">새강의</span>
                             <span class="tag sale">할인중</span>
@@ -1544,7 +1641,10 @@
                                 <div class="card_content">
                                 <div class="course_title">프리미어프로 기초 때려잡기<br>PERFECT 강좌</div>
                                 <div class="instructor">EDUPIC 미디어 강좌.</div>
-                                <div class="price">₩143,000</div>
+                                <div class="price">
+                                <del>₩198,000</del>
+                                <span class="pay_price">₩138,600</span>
+                                </div>
                                 <div class="tags">
                                 <span class="tag new">새강의</span>
                                 <span class="tag sale">할인중</span>
@@ -1564,7 +1664,10 @@
                                 <div class="card_content">
                                 <div class="course_title">블록체인, 가상자산거래소 보안</div>
                                 <div class="instructor">ISMS-P WIN</div>
-                                <div class="price">₩44,000</div>
+                                <div class="price">
+                                <del>₩110,000</del>
+                                <span class="pay_price">₩99,000</span>
+                                </div>
                                 <div class="tags">
                                 <span class="tag new">새강의</span>
                                 <span class="tag sale">할인중</span>
@@ -1584,7 +1687,7 @@
                         <div class="curation_content_header">
                         <a href="#">
                         <h1 class="title">읽어보기
-                        <span class="icon"><i class="fal"></i></span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         </div>
@@ -1645,7 +1748,8 @@
                         <div class="main_content_header">
                         <a href="#">
                         <h1 class="title">기본부터 실무까지 제시해주는 로드맵 🏃🏻‍♀️
-                        <span class="icon"><i class="fal"></i></span>
+                            <span class="courses_tag">RoadMap!!</span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
                         </h1>
                         </a>
                         <p class="subtext">아무것도 몰라도 따라오다 보면 전문가가 될 수 있어요!</p>
@@ -1738,6 +1842,7 @@
                             </div>
                             <a class="button" href="#">
                             <span>지식공유자 참여하기</span>
+                            <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             </div>
                             <div class="apply_box">
@@ -1747,6 +1852,7 @@
                             </div>
                             <a class="button" href="#">
                             <span>비즈니스 신청하기</span>
+                            <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             </div>
                             <div class="apply_box">
@@ -1756,6 +1862,7 @@
                             </div>
                             <a class="button" href="#">
                             <span>대학생 신청하기</span>
+                            <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             </div>
                         </div>
